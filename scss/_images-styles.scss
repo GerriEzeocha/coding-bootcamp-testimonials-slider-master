@@ -1,0 +1,85 @@
+.upicture-section {
+    height: 25.5625rem;
+
+    @include breakpoints-up(medium){
+        height: 34.563rem;
+    }
+
+    @include breakpoints-up(large){
+        float: right;
+        position: relative;
+        right: 107px;
+        bottom: -13px;
+    }
+
+    .pic_background {
+        height: 16.6875rem;
+        width: 20.9375rem;
+        margin-left: 3.3rem;
+        margin-top: 2.625rem;
+        position: relative;
+        z-index: 1;
+        img {
+            width: 100%;
+        }
+
+        @include breakpoints-up(medium){
+            height: 21.688rem;
+            width: 477px;
+        }
+
+    }
+
+    .upicture {
+        height: 16.3125rem;
+        width: 16.3125rem;
+        position: relative;
+        bottom: 14.8125rem;
+        left: 5.5rem;
+        z-index: 2;
+        border-radius: 0.3125rem;
+        img {
+            width: 100%;
+            border-radius: 0.3125rem;
+        }
+
+        @include breakpoints-up(medium){
+            height: 309px;
+            width: 373px;
+            bottom: 303px;
+            left: 94px;
+        }
+        
+    }
+    
+    #slider {
+        height: 1.3125em; 
+        width: 2.6875em;
+        background: white;
+        position: relative;
+        z-index: 3;
+        bottom: 16rem;
+        left: 11rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        box-shadow: -1.125rem 0.5rem 1.625rem $grayishBlue;
+        border-radius:  1.1875em; 
+        transition: all 300ms ease-in-out;
+        transform: translateX(0rem);
+        cursor: pointer;
+
+        img {
+            width: 10%;
+        }
+    }
+}
+.footerimg {
+    width: auto;
+    height: auto;
+
+    img {
+        width: 100%;
+    }
+}
+
